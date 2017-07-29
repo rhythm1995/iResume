@@ -3,15 +3,22 @@
 </style>
 <template>
     <div class="index">
-        <Sidebar></Sidebar>
+        <div style="float: left;width: 20%;margin-top:30px;">
+            <Sidebar></Sidebar>
+        </div>
+        <div style="float: left;width: 80%;margin-left: 20%">
+            <Subject></Subject>
+        </div>
     </div>
 </template>
 <script>
     import Sidebar from '../components/sidebar.vue';
+    import Subject from '../components/subject.vue';
     export default {
-        name:'index',
+        name: 'index',
         components: {
-            Sidebar
+            Sidebar,
+            Subject
         },
         methods: {
             handleStart() {
