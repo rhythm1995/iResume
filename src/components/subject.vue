@@ -29,25 +29,12 @@
         <div class="skills">
             <h3 class="clr2">Professional skills</h3>
             <div class="skill_info">
-                <p>
-                    Duis egestas tortor metus, vitae venenatis tortor tristique at. Pellentesque dignissim purus vitae enim blandit, sed tristique enim malesuada. Maecenas dolor erat,
-                    volutpat a tellus eu, euismod iaculis urna. Nulla dui purus, viverra viverra dolor non, malesuada dictum purus.</p>
-            </div>
-            <div class="skill_list">
-                <div class="skill1">
-                    <h4>Software</h4>
+                <div class="skill">
                     <ul>
                         <li>Photoshop</li>
                         <li>Flash</li>
                         <li>Dreemweeaver</li>
                         <li>In Design</li>
-                    </ul>
-                </div>
-                <div class="skill2">
-                    <h4>Languages</h4>
-                    <ul>
-                        <li>HTML/CSS</li>
-                        <li>ActionScript</li>
                         <li>PHP</li>
                         <li>Ruby on Rais</li>
                     </ul>
@@ -55,8 +42,6 @@
                 <div class="clearfix"></div>
             </div>
         </div>
-        <div class="copyrights">Collect from <a href="http://www.cssmoban.com/">免费网站模板</a></div>
-
     </div>
 </template>
 

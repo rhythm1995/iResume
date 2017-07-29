@@ -21,11 +21,7 @@
         name: 'sidebar',
         data () {
             return {
-                username:'123',
-                image:'',
-                phone:'',
-                email:'',
-                wechat:''
+
             };
         },
         methods: {}
