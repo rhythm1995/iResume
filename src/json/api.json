@@ -1,0 +1,34 @@
+{
+  "张崇_前端_中南大学18年毕业_15675884010": [
+    {
+      "username": "张崇",
+      "image": "../images/avt.png",
+      "phone": "15675884010",
+      "email": "nuptunee@gmail.com",
+      "技术博客": "http://bugzhang.com/",
+      "GitHub": "https://github.com/rhythm1995",
+      "wechat": "15675884010"
+    },
+    {
+      "education": {
+        "school": "中南大学",
+        "major": "计算机科学与技术",
+        "educationTime": "2014-9到2018-6"
+      }
+    },
+    {
+      "company": {
+        "companyName": "深信服科技",
+        "companyTime": "2017-3到2017-6",
+        "job": "云安全部门前端开发",
+        "jobContent": "['全程参与云安全部门cssp3.1、3.2（云安全服务管理平台）版本开发工作，与后端共同设计接口联调','完成系统资源、流量、等数据可视化可控化组件','对项目进行了优化，使首屏加载时间从6~8秒提升到4秒内','兼容了ie8']"
+      }
+    },
+    {
+      "skill": {
+        "skilss":"['熟悉html、css、JavaScript'，'对前端工程化有一定认识，开发过SPA项目，使用过node.js'，'对前端安全、性能优化、设计模式有一定了解']"
+      }
+    }
+  ]
+}
+
