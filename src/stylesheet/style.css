@@ -235,10 +235,28 @@ h3.clr3{
   border: none;
 }
 /*--responsive--*/
+@media (min-width: 1366px) {
+    .sidebar {
+        padding: 2em 17px;
+        width:20%;
+    }
+    .main {
+        margin-left: 19.666667%;
+        width: 80%;
+    }
+}
 @media (max-width: 1366px){
 .sidebar h1 {
   font-size: 2em;
 }
+    .sidebar {
+        padding: 2em 17px;
+        width:20%;
+    }
+    .main {
+        margin-left: 19.666667%;
+        width: 80%;
+    }
 }
 @media (max-width: 1024px){
 .sidebar {
