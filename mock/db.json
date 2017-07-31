@@ -1,13 +1,14 @@
 {
-  "张崇_前端_中南大学18年毕业_15675884010": [
-    {
-      "username": "张崇",
-      "image": "../images/avt.png",
-      "phone": "15675884010",
-      "email": "nuptunee@gmail.com",
-      "技术博客": "http://bugzhang.com/",
-      "GitHub": "https://github.com/rhythm1995",
-      "wechat": "15675884010"
+  "data": [{
+      "base": {
+        "username": "张崇",
+        "image": "src/images/my.jpg",
+        "phone": "15675884010",
+        "email": "nuptunee@gmail.com",
+        "blog": "http://bugzhang.com/",
+        "github": "https://github.com/rhythm1995",
+        "wechat": "15675884010"
+      }
     },
     {
       "education": {
@@ -26,9 +27,8 @@
     },
     {
       "skill": {
-        "skilss":"['熟悉html、css、JavaScript'，'对前端工程化有一定认识，开发过SPA项目，使用过node.js'，'对前端安全、性能优化、设计模式有一定了解']"
+        "skilss": "['熟悉html、css、JavaScript'，'对前端工程化有一定认识，开发过SPA项目，使用过node.js'，'对前端安全、性能优化、设计模式有一定了解']"
       }
     }
   ]
 }
-
