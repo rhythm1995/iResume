@@ -3,7 +3,7 @@
 </style>
 <template>
     <div class="index">
-        <div style="float: left;width: 20%;margin-top:30px;">
+        <div style="float: left;width: 20%;margin-top:20px;">
             <Sidebar></Sidebar>
         </div>
         <div style="float: left;width: 80%;margin-left: 20%">

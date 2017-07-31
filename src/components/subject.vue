@@ -1,73 +1,89 @@
 <template>
     <div class="subject">
-        <div class="education">
-            <h3 class="clr3">Education</h3>
-            <div class="education_details">
-                <h4>University of Awesome<span>JANUARY 2004 - OCTOBER 2015</span></h4>
-                <h6>MAJOR PHD</h6>
-            </div>
-        </div>
-        <div class="company">
-            <h3 class="clr1">Previous Employment</h3>
+        <div class="skills">
+            <h3 class="clr2-green">实习经历</h3>
             <div class="company_details">
-                <h4>Company Name <span>JUNE 2015 - PRESENT</span></h4>
-                <h6>WEB DESIGNER</h6>
-                <p class="cmpny1">
-                    Nulla volutpat at est sed ultricies. In ac sem consequat, posuere nulla varius, molestie lorem. Duis quis nibh leo.
-                    Curabitur a quam eu mi convallis auctor nec id mauris. Nullam mattis turpis eu turpis tincidunt, et pellentesque leo imperdiet.
-                    Vivamus malesuada, sem laoreet dictum pulvinar, orci lectus rhoncus sapien, ut consectetur augue nibh in neque. In tincidunt sed enim et tincidunt.</p>
-            </div>
-            <div class="company_details">
-                <h4>Company Name <span>NOVEMBER 2007 - MAY 2015</span></h4>
-                <h6>WEB DESIGNER</h6>
-                <p>
-                    Nulla volutpat at est sed ultricies. In ac sem consequat, posuere nulla varius, molestie lorem. Duis quis nibh leo.
-                    Curabitur a quam eu mi convallis auctor nec id mauris. Nullam mattis turpis eu turpis tincidunt, et pellentesque leo imperdiet.
-                    Vivamus malesuada, sem laoreet dictum pulvinar, orci lectus rhoncus sapien, ut consectetur augue nibh in neque. In tincidunt sed enim et tincidunt.</p>
+                <h4>{{company.companyName}}<span>{{company.bu}}</span>
+                    <span>{{company.companyTime}}</span>
+                </h4>
+                <h6>{{company.job}}</h6>
+                <ul v-for="jobContent in company.jobContent">
+                    <li>{{jobContent.item}}</li>
+                </ul>
             </div>
         </div>
         <div class="skills">
-            <h3 class="clr2">Professional skills</h3>
+            <h3 class="clr-blue">教育经历</h3>
+            <div class="education_details">
+                <h4>{{education.school}}
+                    <span>{{education.educationTime}}</span>
+                </h4>
+                <h6>{{education.major}}</h6>
+                <ul v-for="schoolContent in education.schoolContent">
+                    <li>{{schoolContent.item}}<span>{{schoolContent.date}}</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="skills">
+            <h3 class="clr3-orange">技能清单</h3>
             <div class="skill_info">
                 <div class="skill">
-                    <ul>
-                        <li>Photoshop</li>
-                        <li>Flash</li>
-                        <li>Dreemweeaver</li>
-                        <li>In Design</li>
-                        <li>PHP</li>
-                        <li>Ruby on Rais</li>
+                    <ul v-for="skill in skills">
+                        <li>{{skill.item}}</li>
                     </ul>
                 </div>
-                <div class="clearfix"></div>
+                <div class="item"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <h3 class="clr3-purple">校内项目</h3>
+            <div class="skill_info">
+                <div class="skill">
+                    <ul v-for="work in works">
+                        <li>{{work.item}}</li>
+                    </ul>
+                </div>
+                <div class="item"></div>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+    import jsonp from 'jsonp';
+
     export default {
         name: 'subject',
-        data () {
+        data() {
             return {
-                education:[{
-                    school:'',
-                    major:'',
-                    time:'',
-
-                }],
-                company:{
-
-                },
-                skill:{
-
-                }
+                education: {},
+                company: {},
+                skills: {},
+                works: {},
             };
         },
-        methods: {}
+        methods: {},
+        created() {
+            jsonp('http://localhost:3000/data', null, (err, data) => {
+                if (err) {
+                    console.error(err.message);
+                } else {
+                    this.company = data[1].company;
+                    this.education = data[2].education;
+                    this.skills = data[3].skill.skills;
+                    this.works = data[4].works;
+                }
+            });
+        },
     };
 </script>
 
 <style scoped>
+    li {
+        list-style: square;
+    }
 
+    li span {
+        margin-left: 15px;
+    }
 </style>

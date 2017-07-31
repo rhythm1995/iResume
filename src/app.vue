@@ -4,20 +4,21 @@
     </div>
 </template>
 <script>
-    export default {
-        data() {
-            return {
+export default {
+    data() {
+        return {
+            base: {}
+        };
+    },
+    mounted() {
 
-            };
-        },
-        mounted() {
+    },
+    beforeDestroy() {
 
-        },
-        beforeDestroy() {
+    },
 
-        },
-        methods: {
+    methods: {
 
-        },
-    };
+    },
+};
 </script>

@@ -99,14 +99,8 @@ address span{
 .details_header ul li a:hover{
 	color:#6ecadc;
 }
-.company {
-	margin:2em 0;
-}
-.company h3{
-  color: #FFF;
-  padding: 5px 41px 5px 30px;
-  display: inline-block;
-}
+
+
 .skills h3{
   color: #FFF;
   padding: 5px 98px 5px 30px;
@@ -166,20 +160,18 @@ address span{
 .skill1 ul li,.skill2 ul li{
 	color:#333;
 }
-.education  h3{
-  background: #999;
-  color: #FFF;
-  padding: 5px 190px 5px 30px;
-  display: inline-block;
-}
-h3.clr1{
+
+h3.clr-blue{
 	background:#6ecadc;
 }
-h3.clr2{
-	background:#e9a820;
+h3.clr2-green{
+    background:#3eb991;
 }
-h3.clr3{
-	background:#3eb991;
+h3.clr3-orange{
+    background:#e9a820;
+}
+h3.clr3-purple{
+    background:#e5aeff;
 }
 .copywrite{
 	padding-left:2em;
@@ -293,9 +285,7 @@ h3.clr3{
   padding: 0 1em;
   font-size: 0.9em;
 }
-.company h3,.skills h3,.education h3{
-  font-size: 1.2em;
-}
+
 .company_details h4, .education_details h4 {
   font-size: 1.1em;
 }
@@ -468,27 +458,11 @@ address {
 .main {
   padding: 1em 0 2em 0;
 }
-.company_details, .education_details,.skill_info  {
-  padding: 1em 0 0em 1em;
-}
-.company h3 {
-  padding: 5px 41px 5px 16px;
-}
-.company_details h4, .education_details h4 {
-  font-size: 0.9em;
-}
-.company_details h6, .education_details h6 {
-  font-size: 0.6em;
-}
-.company {
-  margin: 1em 0;
-}
+
 .skills {
   margin: 1em 0;
 }
-.company h3, .skills h3, .education h3 {
-  font-size: 1em;
-}
+
 .skills h3 {
   padding: 5px 98px 5px 16px;
 }
@@ -501,9 +475,7 @@ address {
 .skill_list {
   padding: 0.5em 0 0 1.5em;
 }
-.education h3 {
-  padding: 5px 190px 5px 16px;
-}
+
 .copywrite p{
 	font-size:0.7em;
 }
