@@ -7,7 +7,9 @@
     "init": "webpack --progress --config webpack.dev.config.js",
     "dev": "webpack-dev-server --content-base ./ --open --inline --hot --compress --history-api-fallback --config webpack.dev.config.js",
     "build": "webpack --progress --hide-modules --config webpack.prod.config.js",
-    "lint": "eslint --fix --ext .js,.vue src"
+    "lint": "eslint --fix --ext .js,.vue src",
+    "mock": "json-server --watch mock/db.json",
+    "mockdev": "npm run mock & npm run dev"
   },
   "repository": {
     "type": "git",
@@ -16,11 +18,12 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "vue": "^2.2.6",
-    "vue-router": "^2.3.1",
-    "iview": "^2.0.0-rc.13",
     "axios": "^0.15.3",
-    "html2canvas": "^0.5.0-beta4"
+    "html2canvas": "^0.5.0-beta4",
+    "iview": "^2.0.0-rc.13",
+    "jsonp": "^0.2.1",
+    "vue": "^2.2.6",
+    "vue-router": "^2.3.1"
   },
   "devDependencies": {
     "autoprefixer-loader": "^2.0.0",
