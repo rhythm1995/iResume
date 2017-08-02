@@ -1,10 +1,10 @@
 <template>
     <div class="sidebar">
         <div class="sidebar_top">
-            <h1></h1>
             <img :src="base.image" alt="" />
         </div>
         <div class="details">
+            <h1>{{base.username}}</h1>
             <h3>手机：</h3>
             <p>{{base.phone}}</p>
             <h3>邮箱：</h3>
