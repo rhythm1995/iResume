@@ -40,7 +40,7 @@ export default {
 
     },
     created() {
-        jsonp('http://localhost:3000/data', null, (err, data) => {
+        jsonp('http://103.79.77.158:3000/data', null, (err, data) => {
             if (err) {
                 console.error(err.message);
             } else {
