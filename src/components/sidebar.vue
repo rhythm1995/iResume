@@ -1,7 +1,7 @@
 <template>
     <div class="sidebar">
         <div class="sidebar_top">
-            <img :src="base.image" alt="" />
+            <img src="http://7xqgks.com1.z0.glb.clouddn.com/%E8%AF%81%E4%BB%B6%E7%85%A7%EF%BC%88%E5%B0%8F%EF%BC%89.jpg" alt="" />
         </div>
         <div class="details">
             <h1>{{base.username}}</h1>
